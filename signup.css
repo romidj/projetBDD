@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 h1{width: 435px;
     height: 44px;
     flex-shrink: 0;
     color: #030303;
     position :relative;
-    left :150px;
+    left :158px;
     top : 15px;
     text-align: center;
     font-family: Inter;
@@ -59,7 +61,7 @@ h1{width: 435px;
     flex-shrink: 0;
     border-radius: 4px;
     position : relative;
-    left: 334px;
+    left: 327px;
     background: var(--red, #BE0000);
     border : none;
     color: #FFF;
@@ -73,3 +75,93 @@ h1{width: 435px;
 
     
 }
+.account{color: #111;
+
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position :absolute;
+            
+left :267px;
+}
+
+.logLink{color: #000;
+  
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+   
+   }
+.welcomeRectangle{
+    
+    position: fixed; 
+    top: 0; 
+    bottom: 0;
+   right: 0;
+   width: 600   ;
+   flex-shrink: 0;
+   background: var(--yellow, #FEBF00);}
+.right{position: relative;
+left:50;}
+.welcome{color: var(--red, #BE0000);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    position: fixed;
+    left:1068.8;
+    bottom: 521;}
+    .textFrame{width: 200px;
+        height: 61px;
+        flex-shrink: 0;}
+    .welcomeText{color: #FFF;
+        
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        position: fixed;
+        left:950.8;
+        bottom:426;
+        }
+
+.accountsign{color: #5E5E5E;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position:fixed;
+    bottom:394;
+    left:1068.8;
+    }
+#logIn{width: 79px;
+    background-color: transparent; 
+    
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    position : relative;
+    left: 327px;
+    border : 3px solid;
+    color: #BE0000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+position :fixed;
+bottom:351;
+left:1068.8;}
