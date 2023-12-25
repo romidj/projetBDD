@@ -17,20 +17,18 @@
 
 body {
   background-color: var(--dark_black--);
+  
 }
 
-.landing::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.landing {
+  position: relative; /* Change to relative position */
   width: 100%;
-  height: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
   background-image: url('../images/cover.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  padding-bottom: 190px; /* Adjust padding to accommodate .clichet height */
 }
 
 
@@ -216,24 +214,79 @@ body {
   bottom: 0;
 
 }
-.landing .clichet img{
-  position: relative;
-  bottom: 0;
-}
+
 /*cichet*/
-.clichet{
+.landing .clichet {
+  position: absolute; /* Change to absolute position */
+  bottom: 0;
+  width: 100%;
+  height: 172px;
   background-image: url('../images/clichet.png');
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  z-index: 1;
+}
+.clichet .movie_title{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 50%;
+left: 0;
+}
+
+.clichet .movie_title .title{
+  color: var(--yelow--);
+  font-size: 30px;
+  font-weight: 700;
+  
+  margin-top: 20px;
+
+
+}
+.clichet .movie_title .discription{
+  color: var(--grey--);
+  font-size: 16px;
+  height: 100px;
+  width: 400px;
+  font-weight: 300px;
+  overflow: hidden;
+}
+.clichet .info{
+  width: 50%;
+  right: 0;
+  display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
 }
   
 
-/*cards */
-.movie_cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+/*this-week */
+.z{
+  margin-top: 40px;
+  margin-bottom: 40px;
 
 }
-
+.z #title{
+  color: var(--yelow--);
+  font-size: 36px;
+  font-weight: 700;
+text-align: center;  
+}
+.this-week{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  
+}
 .card {
   max-width: 1000px;
   width: 100%;
@@ -242,25 +295,34 @@ body {
   align-items: center;
 
 }
-
-.card .movie_img {
-
-  height: 337px;
-  width: 227px;
-  border-radius: 12px;
-  box-shadow: 0 0 17.7px 14px rgba(255, 255, 255, 0.1);
+.this-week .movie_img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card .info_card {
+.this-week .movie_img img {
+
+  height: 325px;
+  width: 215px;
+  border-radius: 12px;
+  box-shadow: 0 0 17.7px 14px rgba(255, 255, 255, 0.1);
+  
+  
+}
+
+.card  {
   padding: 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-left: 20px;
-  min-width: 740px;
-  min-height: 337px;
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 1015px;
+  
   border-radius: 12px;
   border: solid var(--white--) 1px;
   box-shadow: 0 0 17.7px 14px rgba(255, 255, 255, 0.1);
@@ -268,35 +330,44 @@ body {
 
 .card .info_card h2 {
   color: var(--white--);
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
 }
+.info_card{
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
 
-.card .info_card .info {
-  margin-top: 25px;
+ .info {
+  margin-top: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 47px;
+  justify-content: center;
+  gap: 40px;
 }
 
-.card .info_card .info .txt {
+ .info .txt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card .info_card .info .txt .up {
+ .info .txt .up {
   color: var(--grey--);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
 }
 
-.card .info_card .info .txt .down {
+ .info .txt .down {
   color: var(--red--);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -340,4 +411,16 @@ body {
   background-color: var(--red--);
   border-radius: 6px;
   border: none;
+}
+.card .line{
+  
+    border: none;
+    border-top: solid var(--yelow--) 1px; 
+    width: 100%;
+    margin: 40px;
+    
+  
+}
+.movie_img .card{
+  flex: 1;
 }
