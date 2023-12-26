@@ -1,23 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <script>
+        // Your JavaScript code here
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var lastName = document.getElementById('lastNname').value;
+            var userName = document.getElementById('userNname').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var passwordConfirm = document.getElementById('passwordConfirm').value;
+
+            if (name === '' & LastName==='' & userName==='' & phoneNumber === ''& email=== ''&password === '' & confirmPassword === '') {
+                alert('Please fill in all fields.');
+                return false;
+            }
+
+            if (password !== passwordConfirm) {
+                alert('Passwords do not match.');
+                return false;
+            }
+
+            
+
+            return true;
+        } 
+    </script> 
 </head>
 <body>
-<div  class="right"><H1>Create an account</H1>
- <p> <input class='smallInputs' id="name" type='text' name ='name' placeholder="Enter your name"/>
+    <div class ="signup">
+<div  class="right"><H1>Create an account</H1></div>
+<form onsubmit="return validateForm()"><div class="smallIcon"> <input class='smallInputs' id="name" type='text' name ='name' placeholder="Enter your name"/>
     <input class="smallInputs" id="lastName" type='text' name ='lastName' placeholder="Enter last name"/>
-</p>
-<p> <input class="inputs" id="userName" type='text' name ='userName' placeholder="Enter your username"/> </p>
-<p> <input class="inputs" id="phoneNumber" type='text' name ='phoneNumber' placeholder="Enter your phone number"/> </p>
-<p> <input class ="inputs" id="email" type='text' name ='email' placeholder="Enter your phone email"/> </p>
-<p> <input class="inputs" id="password" type='password' name ='password' placeholder="Enter your password"/> </p>
-<p> <input class="inputs" id="passwordConfirm" type='password' name ='passwordConfirm' placeholder="confirm your password"/> </p>
-<button  id="signUp" >Sign up</button>
+ </div>
+ <div class="iconInput">
+<div class ="userName"> <!--i class="fa-solid fa-user"></i--><input class="inputs" id="userName" type='text' name ='userName' placeholder="Enter your username"/> </div>
+<div class="phoneNumber"> <input class="inputs" id="phoneNumber" type='text' name ='phoneNumber' placeholder="Enter your phone number"/> </div>
+<div class="email"> <input class ="inputs" id="email" type='text' name ='email' placeholder="Enter your phone email"/> </div>
+<div class="password"> <input class="inputs" id="password" type='password' name ='password' placeholder="Enter your password"/> </div>
+<div class="passwordConfirm"> <input class="inputs" id="passwordConfirm" type='password' name ='passwordConfirm' placeholder="confirm your password"/> </div></div>
+<button type="submit" id="signUp" >Sign up</button></form>
 <p class ="account" id ='account'> Already have an account?<a href="URL" class ='logLink' id="logLink">Log in</a></p>
 </div>
-<div class="welcomeRectangle"></div>
-<div class="left"><p class="welcome">WELCOME !</p>
-<div class="textFrame"><p class="welcomeText">Register with up to reserve your tickets from the comfort of your home</p></div>
-<p class="accountsign">Already have an account?</p>
-<button  id="logIn" >Log In</button>
+    
+<div class="welcomeRectangle"><p class="welcome">WELCOME !</p>
+    <div class="textFrame"><p class="welcomeText">Register with up to reserve your tickets from the comfort of your home</p></div>
+    <p class="accountsign">Already have an account?</p>
+    <button  id="logIn" >Log In</button>
+    <img id="filmReel" src="ui/filmReel.png" >
 </div>
+
+
 </body>
+</html>
