@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 .signup { position: fixed;
-    
-     
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
     }
 h1{width: 435px;
     height: 44px;
     flex-shrink: 0;
     color: #030303;
-    position :relative;
-    left :195px;
-    top : 15px;
     text-align: center;
     font-family: Inter;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;}
+    line-height: normal;
+   
+    }
+
+.createAccount{display:flex;
+    align-items: center;
+    justify-content: center;
+    }
      .smallInputs{
+        
         width: 225px;
         height: 51px;
         flex-shrink: 0;
@@ -25,11 +37,20 @@ h1{width: 435px;
         border: none;
         background: #D9D9D9;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position :relative;
-        left:122px;
-        padding-left: 60px;
+         margin-bottom : 12.5px ;
+         margin-top: 12.5px;
+         padding-left: 60px;
      }
-    .inputs{width: 523px;
+     .iconInput{
+        
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+    .inputs{
+        
+        width: 100%;
         height: 51px;
         flex-shrink: 0;
         border-radius: 30px;
@@ -38,9 +59,13 @@ h1{width: 435px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         margin-bottom: 20px;
         margin-top: 20px;
-        padding-left: 60px;
-        position :relative;
-        left : 122px;
+       
+        
+        }
+        .SignUpButton{
+            display:flex;
+             align-items: center;
+             justify-content: center;
         }
 
     input::placeholder {
@@ -56,30 +81,27 @@ h1{width: 435px;
             
             top :16px;
         z-index:2;}
-     .smallInputs{
-    margin-right: 8px;
-    margin-bottom: 12.5px ;
-    margin-top: 12.5px;
     
-   } 
    .smallIcon{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    margin-left: 30px;
 }
 .smallIcon::before{
 content:"\f007";
 font-family: 'Font Awesome 5 Free';
 color :black;
-position: absolute;
-left: 150px;
+position: relative;
+left: 40px;
 z-index:1;}
 .smallIcon::after{
     content:"\f007";
     font-family: 'Font Awesome 5 Free';
     color :black;
-    position: absolute;
-    left: 435px;
+    position: relative;
+    right: 40px;
     z-index:1;}
     
 
@@ -87,13 +109,14 @@ z-index:1;}
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: 90%;
     }
     .userName::before{
     content:"\f007";
     font-family: 'Font Awesome 5 Free';
     color :black;
-    position: absolute;
-    left: 150px;
+    position: relative;
+    left: 40px;
     z-index:1;
     
    }
@@ -101,13 +124,14 @@ z-index:1;}
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
 }
 .phoneNumber::before{
 content:"\f095";
 font-family: 'Font Awesome 5 Free';
 color :black;
-position: absolute;
-left: 150px;
+position: relative;
+left: 40px;
 z-index:1;
 
 }
@@ -115,13 +139,14 @@ z-index:1;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
 }
 .email::before{
 content:"\f0e0";
 font-family: 'Font Awesome 5 Free';
 color :black;
-position: absolute;
-left: 150px;
+position: RELATIVE;
+left: 40px;
 z-index:1;
 
 }
@@ -129,26 +154,28 @@ z-index:1;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
 }
 .password::before{
 content:"\f023";
 font-family: 'Font Awesome 5 Free';
 color :black;
-position: absolute;
-left: 150px;
+position: relative;
+left: 40px;
 z-index:1;}
 
 .passwordConfirm{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 90%;
 }
 .passwordConfirm::before{
 content:"\f023";
 font-family: 'Font Awesome 5 Free';
 color :black;
-position: absolute;
-left: 150px;
+position: relative;
+left: 40px;
 z-index:1;
 
 }
@@ -159,8 +186,7 @@ z-index:1;
     height: 42px;
     flex-shrink: 0;
     border-radius: 4px;
-    position : relative;
-    left: 367.5px;
+   
     background: var(--red, #BE0000);
     border : none;
     color: #FFF;
@@ -185,9 +211,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-position :absolute;
-            
-left :320px;
+margin-top: 1%;
 }
 
 .logLink{color: #000;
@@ -199,31 +223,32 @@ left :320px;
     line-height: normal;
    
    }
-.right{position: relative;
-    left:50;}
 .welcomeRectangle{
     
     position: fixed; 
     top: 0; 
     bottom: 0;
     right: 0;
-    width: 600px;
+    width: 40%;
+    
     flex-shrink: 0;
     background: var(--yellow, #FEBF00);
-    display:grid;
+    display:flex;
+    flex-direction: column;
     align-items: center;
      justify-content: center;
-   height: 100vh; }
+   height: 100vh;
+   gap: 10px;}
 
- .welcome{color: var(--red, #BE0000);
+ .welcome{color: #BE0000;
     text-align: center;
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    position: relative;
-    top: 80px;
+    position: fixed;
+    top:18%;
     }
  .textFrame
        {width:250px;
@@ -239,9 +264,7 @@ left :320px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        position: relative;
-        padding-top: 10px;
-        
+        margin:1%;      
         }
 
  .accountsign{color: #5E5E5E;
@@ -252,10 +275,10 @@ left :320px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    position:relative;
-    padding-bottom: 400px;
     
+    margin: 0.5%;
     }
+.logInButton{height:100PX}
  #logIn{width: 79px;
     background-color: transparent; 
     height: 42px;
@@ -271,14 +294,14 @@ left :320px;
     line-height: normal;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     position :relative;
-    bottom: 380px;
-    left:85px;
+    margin-top: 1%;
+   
     }
 #logIn:hover{background-color: #BE0000;
    color:white;
 border-color: #BE0000;}
   #filmReel{
-    width:600px;
+    width:40%;
     position: fixed;
     bottom: 0;
 }
