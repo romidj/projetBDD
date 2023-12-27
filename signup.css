@@ -75,7 +75,7 @@ position: absolute;
 left: 150px;
 z-index:1;}
 .smallIcon::after{
-    content:"\f070";
+    content:"\f007";
     font-family: 'Font Awesome 5 Free';
     color :black;
     position: absolute;
@@ -103,7 +103,7 @@ z-index:1;}
     align-items: center;
 }
 .phoneNumber::before{
-content:"\f007";
+content:"\f095";
 font-family: 'Font Awesome 5 Free';
 color :black;
 position: absolute;
@@ -117,7 +117,7 @@ z-index:1;
     align-items: center;
 }
 .email::before{
-content:"\f007";
+content:"\f0e0";
 font-family: 'Font Awesome 5 Free';
 color :black;
 position: absolute;
@@ -131,14 +131,14 @@ z-index:1;
     align-items: center;
 }
 .password::before{
-content:"\f007";
+content:"\f023";
 font-family: 'Font Awesome 5 Free';
 color :black;
 position: absolute;
 left: 150px;
 z-index:1;}
 .password::after{
-    content:"\f070";
+    content:"\f06e";
     font-family: 'Font Awesome 5 Free';
     color :black;
     position: absolute;
@@ -151,7 +151,7 @@ z-index:1;}
     align-items: center;
 }
 .passwordConfirm::before{
-content:"\f007";
+content:"\f023";
 font-family: 'Font Awesome 5 Free';
 color :black;
 position: absolute;
@@ -160,7 +160,7 @@ z-index:1;
 
 }
 .passwordConfirm::after{
-    content:"\f070";
+    content:"\f06e";
     font-family: 'Font Awesome 5 Free';
     color :black;
     position: absolute;
@@ -294,170 +294,4 @@ border-color: #BE0000;}
     width:600px;
     position: fixed;
     bottom: 0;
-}@import url('https://fonts.googleapis.com/css?family=Inter');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-h1{width: 435px;
-    height: 44px;
-    flex-shrink: 0;
-    color: #030303;
-    position :relative;
-    left :158px;
-    top : 15px;
-    text-align: center;
-    font-family: Inter;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;}
-     .smallInputs{
-        width: 251px;
-        height: 51px;
-        flex-shrink: 0;
-        border-radius: 30px;
-        border: none;
-        background: #D9D9D9;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position :relative;
-        left:122px;
-        ;
-     }
-    .inputs{width: 523px;
-        height: 51px;
-        flex-shrink: 0;
-        border-radius: 30px;
-        border: none;
-        background: #D9D9D9;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        margin-bottom: 12.5px;
-        margin-top: 12.5px;
-        position :relative;
-        left : 122px;
-        }
-
-    input::placeholder {
-            color: #676565;
-            font-family: Inter;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            position :absolute;
-            
-            left :64px;
-            
-            top :16px;}
-   .smallInputs{
-    margin-right: 10.5px;
-    margin-bottom: 12.5px ;
-    margin-top: 12.5px;
-   }         
-
-#signUp{width: 98px;
-    height: 42px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    position : relative;
-    left: 327px;
-    background: var(--red, #BE0000);
-    border : none;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-    
 }
-.account{color: #111;
-
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position :absolute;
-            
-left :267px;
-}
-
-.logLink{color: #000;
-  
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-   
-   }
-.welcomeRectangle{
-    
-    position: fixed; 
-    top: 0; 
-    bottom: 0;
-   right: 0;
-   width: 600   ;
-   flex-shrink: 0;
-   background: var(--yellow, #FEBF00);}
-.right{position: relative;
-left:50;}
-.welcome{color: var(--red, #BE0000);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    position: fixed;
-    left:1068.8;
-    bottom: 521;}
-    .textFrame{width: 200px;
-        height: 61px;
-        flex-shrink: 0;}
-    .welcomeText{color: #FFF;
-        
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        position: fixed;
-        left:950.8;
-        bottom:426;
-        }
-
-.accountsign{color: #5E5E5E;
-
-    text-align: center;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    position:fixed;
-    bottom:394;
-    left:1068.8;
-    }
-#logIn{width: 79px;
-    background-color: transparent; 
-    
-    height: 42px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    position : relative;
-    left: 327px;
-    border : 3px solid;
-    color: #BE0000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-position :fixed;
-bottom:351;
-left:1068.8;}
