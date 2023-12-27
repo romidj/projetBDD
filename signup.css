@@ -137,14 +137,7 @@ color :black;
 position: absolute;
 left: 150px;
 z-index:1;}
-.password::after{
-    content:"\f06e";
-    font-family: 'Font Awesome 5 Free';
-    color :black;
-    position: absolute;
-    left: 665px;
-    z-index:1;}
-    
+
 .passwordConfirm{
     display: flex;
     flex-direction: row;
@@ -159,13 +152,7 @@ left: 150px;
 z-index:1;
 
 }
-.passwordConfirm::after{
-    content:"\f06e";
-    font-family: 'Font Awesome 5 Free';
-    color :black;
-    position: absolute;
-    left: 665px;
-    z-index:1;}
+
 
 
 #signUp{width: 98px;
