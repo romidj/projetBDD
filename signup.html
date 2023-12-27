@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,25 +36,8 @@
             return true;
         } 
 
-        function togglePassword() {
-        var passwordInput = document.getElementById('password');
-        var passwordAfter = document.querySelector('.password::after');
-
-
-        // Check if the input type is password
-        if (passwordInput.type === 'password') {
-            // If password is hidden, show it
-            passwordInput.type = 'text';
-            passwordAfter.style.content = "\f070"; // Replace with your hide icon
-            
-        } else {
-            // If password is visible, hide it
-            passwordInput.type = 'password';
-            passwordAfter.style.content = "\f06e"; // Replace with your show icon
-           
-            
-        }
-    }
+        
+    
     </script> 
 </head>
 <body>
@@ -66,9 +50,7 @@
 <div class ="userName"> <!--i class="fa-solid fa-user"></i--><input class="inputs" id="userName" type='text' name ='userName' placeholder="Enter your username"/> </div>
 <div class="phoneNumber"> <input class="inputs" id="phoneNumber" type='text' name ='phoneNumber' placeholder="Enter your phone number"/> </div>
 <div class="email"> <input class ="inputs" id="email" type='text' name ='email' placeholder="Enter your phone email"/> </div>
-<div class="password"> <input class="inputs" id="password" type='password' name ='password' placeholder="Enter your password"/>
-    <div class="password_after" onclick="togglePassword(document.getElementById('password'), document.querySelector('.password::after'))"></div>
-</div> 
+<div class="password"> <input class="inputs" id="password" type='password' name ='password' placeholder="Enter your password"/></div> 
 <div class="passwordConfirm"> <input class="inputs" id="passwordConfirm" type='password' name ='passwordConfirm' placeholder="confirm your password"/></div></div>
 <button type="submit" id="signUp" >Sign up</button></form>
 <p class ="account" id ='account'> Already have an account?<a href="URL" class ='logLink' id="logLink">Log in</a></p>
@@ -82,9 +64,5 @@
 </div>
 
         
-</body>
-</html>
-
-
 </body>
 </html>
